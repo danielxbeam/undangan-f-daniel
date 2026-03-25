@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of F & Daniel</title>
+    <meta name="description" content="Wedding Invitation of F and Daniel.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- FIXED GLOBAL PARALLAX SYSTEM -->
+    <div class="parallax-wrapper">
+        <div class="parallax-layer layer-back" data-speed="0.15"></div>
+        <div class="parallax-layer layer-mist" data-speed="0.3"></div>
+        <div class="parallax-layer layer-front" data-speed="0.7"></div>
+    </div>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-bg"></div>
+        <div class="splash-content">
+            <h3 class="splash-subtitle">The Wedding of</h3>
+            <h1 class="splash-title">F & Daniel</h1>
+            <p class="splash-date">Sabtu, 16 Mei 2026</p>
+            <button id="btn-open" class="btn-primary">
+                <i class="ph ph-envelope-open"></i> Buka Undangan
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content wrapper, hidden initially -->
+    <main id="main-content" class="hidden">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="cloud-wrapper">
+                    <div class="cloud-bg"></div>
+                    <p class="hero-intro misty-reveal">“I would rather share one lifetime with you than face all the ages of this world alone.”</p>
+                    <p class="hero-quote-author misty-reveal delay-1">— Arwen, The Lord of the Rings</p>
+                </div>
+                <div class="hero-names">
+                    <div class="reveal-wrapper"><h2 class="reveal-text delay-2">F</h2></div>
+                    <div class="reveal-wrapper"><span class="reveal-text delay-3">&</span></div>
+                    <div class="reveal-wrapper"><h2 class="reveal-text delay-4">Daniel</h2></div>
+                </div>
+                <div class="reveal-wrapper"><p class="hero-date reveal-text delay-5">16 Mei 2026</p></div>
+            </div>
+            <div class="scroll-down">
+                <i class="ph ph-caret-down"></i>
+            </div>
+        </section>
+
+        <!-- Couple Section -->
+        <section id="couple" class="couple section">
+            <div class="reveal-wrapper"><h3 class="section-title reveal-text">Mempelai</h3></div>
+            <div class="couple-container fade-up delay-1">
+                <div class="person">
+                    <img src="assets/portrait_bride.jpg" alt="Bride" class="person-img">
+                    <h2 class="person-name">F</h2>
+                    <p class="person-parents">Putri dari<br>Bapak Prawoto & Ibu Sri Lestari</p>
+                    <a href="https://instagram.com/f8845" class="person-ig" target="_blank"><i class="ph ph-instagram-logo"></i> @f8845</a>
+                </div>
+                <div class="and-symbol">&</div>
+                <div class="person">
+                    <img src="assets/portrait_groom.jpg" alt="Groom" class="person-img">
+                    <h2 class="person-name">Daniel Ade Kurniawan</h2>
+                    <p class="person-parents">Putra dari<br>Bapak Winantijo Adhi Rahaju & Ibu Sri Kaesti</p>
+                    <a href="https://instagram.com/imutiuswolfgang" class="person-ig" target="_blank"><i class="ph ph-instagram-logo"></i> @imutiuswolfgang</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="events section">
+            <h3 class="section-title fade-up">Informasi Acara</h3>
+            <div class="events-grid">
+                <div class="event-card fade-up delay-1">
+                    <i class="ph ph-rings event-icon"></i>
+                    <h4>Akad Nikah</h4>
+                    <p class="event-date">Sabtu, 16 Mei 2026</p>
+                    <p class="event-time">10:00 - 11:30 WIB</p>
+                    <p class="event-location" style="margin-bottom: 25px;">Gereja Santo Yohanes Rasul<br>Jl. St. Delanggu No.53, Sabrang, Kec. Delanggu, Kabupaten Klaten, Jawa Tengah</p>
+                    <a href="https://maps.app.goo.gl/vXLRzQpMiC5SJZrQ8" target="_blank" class="btn-primary btn-small">Lihat Lokasi</a>
+                </div>
+                <div class="event-card fade-up delay-2">
+                    <i class="ph ph-champagne event-icon"></i>
+                    <h4>Resepsi</h4>
+                    <p class="event-date">Sabtu, 16 Mei 2026</p>
+                    <p class="event-time">19:00 - 22:00 WIB</p>
+                    <p class="event-location" style="margin-bottom: 25px;">Graha Setyowati<br>Jl. Mangesti Raya, Gentan, Kec. Baki, Kabupaten Sukoharjo, Jawa Tengah</p>
+                    <a href="https://maps.app.goo.gl/9Vu5caAUqAoBFN2r6" target="_blank" class="btn-primary btn-small">Lihat Lokasi</a>
+                </div>
+            </div>
+            
+            <div class="countdown-container fade-up delay-3">
+                <h4>Menuju Hari Bahagia</h4>
+                <div id="countdown" class="countdown">
+                    <div class="time-box">
+                        <span id="days">00</span>
+                        <small>Hari</small>
+                    </div>
+                    <div class="time-box">
+                        <span id="hours">00</span>
+                        <small>Jam</small>
+                    </div>
+                    <div class="time-box">
+                        <span id="minutes">00</span>
+                        <small>Menit</small>
+                    </div>
+                    <div class="time-box">
+                        <span id="seconds">00</span>
+                        <small>Detik</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery section">
+            <h3 class="section-title fade-up">Our Gallery</h3>
+            <div class="gallery-grid">
+                <img src="assets/hero_couple.jpg" alt="Gallery 1" class="gallery-img zoom-in">
+                <img src="assets/gallery_1.jpg" alt="Gallery 2" class="gallery-img zoom-in delay-1">
+                <img src="assets/gallery_2.jpg" alt="Gallery 3" class="gallery-img zoom-in delay-2">
+            </div>
+        </section>
+
+        <!-- Love Story Section -->
+        <section id="story" class="story section">
+            <h3 class="section-title fade-up">Our Love Story</h3>
+            <div class="timeline fade-up delay-1">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Awal Bertemu</h4>
+                        <p class="timeline-date">September 2017</p>
+                        <p>Kisah kami dimulai pada masa SMA. Dari pertemuan-pertemuan sederhana kala di sekolah, membawa kami pada sebuah cerita panjang yang tak terlupakan.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Tunangan</h4>
+                        <p class="timeline-date">Februari 2023</p>
+                        <p>Setelah melewati banyak tahun bersama dengan penuh suka dan duka, kami memutuskan untuk melangkah ke jenjang yang lebih serius dengan sebuah pertunangan.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Pernikahan</h4>
+                        <p class="timeline-date">Mei 2026</p>
+                        <p>Hari bahagia yang telah kami nantikan. Semoga langkah ini menjadi awal yang indah dan selalu diberkati kelancaran.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP & Wishes Section -->
+        <section id="rsvp" class="rsvp section">
+            <h3 class="section-title fade-up">RSVP & Ucapan</h3>
+            <div class="rsvp-container fade-up delay-1">
+                <form id="rsvp-form" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" placeholder="Isi nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="attendance">Kehadiran</label>
+                        <select id="attendance" required>
+                            <option value="" disabled selected>Pilih konfirmasi kehadiran</option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">Tidak Hadir</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pax">Jumlah Tamu</label>
+                        <select id="pax">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ucapan & Doa</label>
+                        <textarea id="message" rows="4" placeholder="Tuliskan ucapan untuk kedua mempelai" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-100">Kirim Konfirmasi</button>
+                </form>
+                <div id="wishes-list" class="wishes-list mt-4">
+                    <!-- Dynamic wishes will be prepended here -->
+                    <div class="wish-card">
+                        <h5>Ayu & Keluarga</h5>
+                        <p class="wish-status"><i class="ph ph-check-circle"></i> Hadir</p>
+                        <p>Happy Wedding F & Daniel! Semoga bahagia selalu dan dilancarkan semuanya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wedding Gift Section (Replaced per user request) -->
+        <section id="gift" class="gift section" style="min-height: auto; padding-top: 20px; padding-bottom: 150px;">
+            <p class="gift-intro fade-up delay-1" style="font-size: 1.5rem; font-style: italic; color: var(--color-accent); font-family: var(--font-heading);">"Doa restu Anda merupakan karunia yang sangat berarti bagi kami."</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer fade-up delay-1">
+            <p class="footer-quote">“Through ups and downs, i’ll choose you. It’ll always be you, over and over again.”</p>
+            <h3>F & Daniel</h3>
+            <p>&copy; 2026 The Wedding of F & Daniel. Crafted with love.</p>
+        </footer>
+    </main>
+
+    <!-- Audio Element -->
+    <audio id="bg-music" loop>
+        <!-- Local fallback (Recommended for production) -->
+        <source src="assets/cant_help_falling_in_love_elvis.mp3" type="audio/mpeg">
+        <!-- Public Stream (Elvis Presley - Can't Help Falling In Love) -->
+        <source src="https://archive.org/download/elvis-presley-cant-help-falling-in-love/Elvis%20Presley%20-%20Can%27t%20Help%20Falling%20In%20Love.mp3" type="audio/mpeg">
+        <source src="https://ia801602.us.archive.org/11/items/elvis-presley-cant-help-falling-in-love/Elvis%20Presley%20-%20Can%27t%20Help%20Falling%20In%20Love.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Audio Control -->
+    <button id="btn-audio" class="btn-audio hidden">
+        <i class="ph ph-speaker-high"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
